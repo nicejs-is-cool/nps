@@ -53,7 +53,12 @@ let rscript = scripts[script];
 for (let i = 0; i < argv.length; i++) {
     rscript = rscript.replace(new RegExp(`\\$${i}`,"g"),argv[i]);
 }
-rscript = rscript.replace(/\$\*/g,argv.join(' '))
+rscript = rscript.replace(/\$\*/g,argv.join(' ').slice(1))
+
+if (rscript.includes("\n")) {
+    errorLog("Error: New lines(LF or CRLF) are not allowed in scripts.");
+    process.exit(1);
+}
 
 infoLog(`Running script ${script}...`);
 
