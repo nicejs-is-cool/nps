@@ -1,13 +1,13 @@
 {
-  "name": "nps",
+  "name": "@kagamox/nps",
   "bin": "./index.js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Easy NPM Script Runner",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["npm script", "scripts", "script", "npm", "npm scripts", "run", "easy"],
   "author": "",
   "license": "ISC",
   "dependencies": {
