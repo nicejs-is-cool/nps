@@ -4,7 +4,6 @@ You can use arguments within npm scripts using this,
 And also it is a quick way to run npm scripts.
 ### Usage
 ```
-Usage:
 nps <script> [arguments]
 You can access arguments from the script using $<index> example:
 If you run "nps hello world!"
