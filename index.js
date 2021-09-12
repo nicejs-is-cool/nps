@@ -48,13 +48,12 @@ if (!scripts[script]) {
     errorLog(`The specified script(${script}) doesn't exist in the current folder.`);
     process.exit(1)
 }
-infoLog("Processing script...")
+
 let rscript = scripts[script];
 for (let i = 0; i < argv.length; i++) {
     rscript = rscript.replace(new RegExp(`\\$${i}`,"g"),argv[i]);
 }
 rscript = rscript.replace(/\$\*/g,argv.join(' '))
-
 
 infoLog(`Running script ${script}...`);
 
