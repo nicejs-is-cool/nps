@@ -3,7 +3,7 @@
   "bin": {
     "nps": "index.js"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy NPM Script Runner",
   "main": "index.js",
   "scripts": {
